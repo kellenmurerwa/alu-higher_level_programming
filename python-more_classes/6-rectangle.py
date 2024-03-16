@@ -7,6 +7,7 @@ class Rectangle:
 
     def __init__(self, width=0, height=0):
         """type height object"""
+        type(self).number_of_instances += 1
         self.width = width
         self.height = height
 
@@ -56,7 +57,9 @@ class Rectangle:
 
     def __repr__(self):
         """Return the string representation of the Rectangle."""
-        return f"Rectangle({self.__width}, {self.__height})"
+        rect = "Rectangle(" + str(self.__width)
+        rect += ", " + str(self.__height) + ")"
+        return (rect)
 
     def __del__(self):
         """Prints a message for every deletion of a Rectangle."""
