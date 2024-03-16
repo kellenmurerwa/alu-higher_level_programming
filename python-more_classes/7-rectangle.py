@@ -2,7 +2,7 @@
 """the first line in python"""
 
 class Rectangle:
-    """Deffining a rectangle class"""
+    """Defining a rectangle class"""
     number_of_instances = 0
     print_symbol = "#"
 
@@ -49,6 +49,7 @@ class Rectangle:
         else:
             return 2 * (self.__height + self.__width)
 
+    @property
     def __str__(self):
         if self.__width == 0 or self.__height == 0:
             return ""
