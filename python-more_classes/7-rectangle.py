@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """the first line in python"""
 
+
 class Rectangle:
     """Defining a rectangle class"""
     number_of_instances = 0
