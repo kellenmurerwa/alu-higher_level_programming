@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """the first line in python"""
 
-
 class Rectangle:
     """Deffining a rectangle class"""
     number_of_instances = 0
@@ -23,7 +22,6 @@ class Rectangle:
             raise TypeError('width must be an integer')
         if value < 0:
             raise ValueError("width must be >= 0")
-
         self.__width = value
 
     @property
