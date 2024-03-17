@@ -74,7 +74,8 @@ class Rectangle:
         m = str(self.print_symbol) * self.__width
         r = (((m) + "\n") * self.__height)[:-1]
         return r
-def __repr__(self):
+
+    def __repr__(self):
         """Return the string representation of the Rectangle."""
         rect = "Rectangle(" + str(self.__width)
         rect += ", " + str(self.__height) + ")"
