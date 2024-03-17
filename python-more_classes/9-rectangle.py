@@ -69,17 +69,17 @@ class Rectangle:
 
     @classmethod
     def square(cls, size=0):
-        """Return a new Rectangle with width and height equal to size.
-        Args:
-            size (int): The width and height of the new Rectangle.
-        """
-        return (cls(size, size)
+        return cls(size, size)
+
+
 
     def __str__(self):
         if self.__width == 0 or self.__height == 0:
             return ""
-        else:
-            return (((str(self.print_symbol) * self.__width) + "\n") * self.__height)[:-1]
+
+        m = str(self.print_symbol) * self.__width
+        r = (((m) + "\n") * self.__height)[:-1]
+        return r
 
     def __repr__(self):
         """Return the string representation of the Rectangle."""
