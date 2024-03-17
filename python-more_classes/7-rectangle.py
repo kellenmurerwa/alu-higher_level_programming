@@ -54,8 +54,8 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return ""
 
-        rec = (((str(self.print_symbol) * self.__width) + "\n") * self.__height)[:-1]
-        return rec
+        r = (((str(self.print_symbol) * self.__width) + "\n") * self.__height)[:-1]
+        return r
 
     def __repr__(self):
         """Return the string representation of the Rectangle."""
