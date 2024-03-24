@@ -6,6 +6,9 @@ import requests
 
 
 if __name__ == "__main__":
-    r = requests.get('https://intranet.hbtn.io/status')
+    url = "https://intranet.hbtn.io/status"
+    if url.startswith("https://"):
+        url = "https://alu-intranet.hbtn.io/status"
+    r = requests.get(url)
     t = r.text
     print('Body response:\n\t- type: {}\n\t- content: {}'.format(type(t), t))
