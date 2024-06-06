@@ -1,1 +1,0 @@
-more abt python

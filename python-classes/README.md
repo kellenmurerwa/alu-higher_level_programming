@@ -1,1 +1,0 @@
-Learning about oop in python

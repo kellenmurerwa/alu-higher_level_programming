@@ -1,1 +1,0 @@
-Learning Python programming language
